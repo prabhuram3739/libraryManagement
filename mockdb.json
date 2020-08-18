@@ -1,0 +1,275 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Book1",
+      "sector": "Sci-Fi",
+      "borrowedDate": "",
+      "reader": "",
+      "ISBN": "1a98e63984",
+      "authors": "Thiwanka",
+      "publisher": "New Publiishers",
+      "pageCount": "1520"
+    },
+    {
+      "id": 2,
+      "title": "Book Somethuin",
+      "sector": "Novel",
+      "borrowedDate": "1/11/2018",
+      "reader": "RDR14",
+      "ISBN": "1a48w96a52",
+      "authors": "Someone",
+      "publisher": "Other Publishers",
+      "pageCount": "1020"
+    },
+    {
+      "id": 3,
+      "title": "Book12",
+      "sector": "Sci-Fi",
+      "borrowedDate": "",
+      "reader": "",
+      "ISBN": "454as53w96",
+      "authors": "Samuel",
+      "publisher": "Old Publiishers",
+      "pageCount": "100"
+    },
+    {
+      "id": 4,
+      "title": "Book1as",
+      "sector": "Documentary",
+      "borrowedDate": "1/11/2018",
+      "reader": "RDR16",
+      "ISBN": "1a98e64984",
+      "authors": "Thiwanka",
+      "publisher": "New Publiishers",
+      "pageCount": "1520"
+    },
+    {
+      "id": 5,
+      "title": "testBook-9",
+      "sector": "Novels",
+      "borrowedDate": "",
+      "reader": "",
+      "ISBN": "1233131",
+      "authors": "testAuthor",
+      "publisher": "testPublisher",
+      "pageCount": "20000"
+    },
+    {
+      "id": 6,
+      "title": "testBook-6",
+      "sector": "Novels",
+      "borrowedDate": "",
+      "reader": "",
+      "ISBN": "1233132",
+      "authors": "testAuthor1",
+      "publisher": "testPublisher1",
+      "pageCount": "3000"
+    }
+  ],
+  "overDraftedBooks": [
+    {
+      "id": 1,
+      "title": "OverDBook1",
+      "sector": "Documentary",
+      "borrowedDate": "10/10/2018",
+      "reader": "RDR18",
+      "ISBN": "1a98e63932",
+      "authors": "Thiwanka",
+      "publisher": "New Publiishers",
+      "pageCount": "1520"
+    },
+    {
+      "id": 2,
+      "title": "OverDBook2",
+      "sector": "Documentary",
+      "borrowedDate": "11/10/2018",
+      "reader": "RDR19",
+      "ISBN": "1a98e63945",
+      "authors": "Thiwanka",
+      "publisher": "New Publiishers",
+      "pageCount": "1520"
+    }
+  ],
+  "DVDS": [
+    {
+      "id": 1,
+      "title": "DVD1",
+      "sector": "Sci-Fi",
+      "publDate": "10/10/1995",
+      "borrowedDate": "",
+      "reader": "",
+      "ISBN": "1a98e63984",
+      "actors": [
+        {
+          "name": "Thiwanka",
+          "Contact": "00124565"
+        },
+        {
+          "name": "Someone",
+          "Contact": "00124565"
+        }
+      ],
+      "producer": "New Publiishers",
+      "duration": "2.40",
+      "subtitles": [
+        "english",
+        "chineese"
+      ],
+      "languages": [
+        "english",
+        "arabic"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "DVD2",
+      "sector": "Sci-Fi",
+      "publDate": "10/10/1995",
+      "borrowedDate": "",
+      "reader": "",
+      "ISBN": "1a98e63984",
+      "actors": [
+        {
+          "name": "Thiwanka",
+          "Contact": "00124565"
+        },
+        {
+          "name": "Someone",
+          "Contact": "00124565"
+        }
+      ],
+      "producer": "New Publiishers",
+      "duration": "2.40",
+      "subtitles": [
+        "english",
+        "chineese"
+      ],
+      "languages": [
+        "english",
+        "arabic"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "DVD3",
+      "sector": "Action",
+      "publDate": "10/10/1995",
+      "borrowedDate": "08/11/2018",
+      "reader": "RDR15",
+      "ISBN": "1a98e63984",
+      "actors": [
+        {
+          "name": "Thiwanka",
+          "Contact": "00124565"
+        },
+        {
+          "name": "Someone",
+          "Contact": "00124565"
+        }
+      ],
+      "producer": "New Publiishers",
+      "duration": "2.40",
+      "subtitles": [
+        "english",
+        "chineese"
+      ],
+      "languages": [
+        "english",
+        "arabic"
+      ]
+    }
+  ],
+  "odDVDS": [
+    {
+      "id": 1,
+      "title": "OverDDVD5",
+      "sector": "Action",
+      "publDate": "10/10/1995",
+      "borrowedDate": "08/11/2018",
+      "reader": "RDR15",
+      "ISBN": "1a98e63984",
+      "actors": [
+        {
+          "name": "Thiwanka",
+          "Contact": "00124565"
+        },
+        {
+          "name": "Someone",
+          "Contact": "00124565"
+        }
+      ],
+      "producer": "New Publiishers",
+      "duration": "2.40",
+      "subtitles": [
+        "english",
+        "chineese"
+      ],
+      "languages": [
+        "english",
+        "arabic"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "OverDDVD7",
+      "sector": "Action",
+      "publDate": "10/10/1995",
+      "borrowedDate": "08/11/2018",
+      "reader": "RDR17",
+      "ISBN": "1a98e63984",
+      "actors": [
+        {
+          "name": "Thiwanka",
+          "Contact": "00124565"
+        },
+        {
+          "name": "Someone",
+          "Contact": "00124565"
+        }
+      ],
+      "producer": "New Publiishers",
+      "duration": "2.40",
+      "subtitles": [
+        "english",
+        "chineese"
+      ],
+      "languages": [
+        "english",
+        "arabic"
+      ]
+    }
+  ],
+  "readers": [
+    {
+      "name": "Anyone",
+      "ID": "RDR14",
+      "address": "asdjaksda"
+    },
+    {
+      "name": "Jacksonasd",
+      "ID": "RDR15",
+      "address": "asdjaksda"
+    },
+    {
+      "name": "Samuelasda",
+      "ID": "RDR16",
+      "address": "asdasda asda"
+    },
+    {
+      "name": "Thiwanasdaka",
+      "ID": "RDR17",
+      "address": "asdac asda"
+    },
+    {
+      "name": "asda",
+      "ID": "RDR18",
+      "address": "asdasda asda"
+    },
+    {
+      "name": "asda",
+      "ID": "RDR19",
+      "address": "asas as"
+    }
+  ]
+}

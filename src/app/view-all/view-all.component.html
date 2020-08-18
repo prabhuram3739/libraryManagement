@@ -1,0 +1,109 @@
+<div class="viewAll">
+  <mat-card *ngFor="let book of books">
+    <mat-card-header>
+      <mat-card-title>{{book.title}}</mat-card-title>
+      <mat-card-subtitle>{{book.sector}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      {{book.borrowedDate}}
+    </mat-card-content>
+    <mat-card-content>
+      {{book.reader}}
+    </mat-card-content>
+    <mat-card-content>
+      {{book.authors}}
+    </mat-card-content>
+    <mat-card-content>
+      {{book.publisher}}
+    </mat-card-content>
+    <mat-card-content>
+      {{book.pageCount}}
+    </mat-card-content>
+  </mat-card>
+
+  <!--DVDs-->
+  <mat-card *ngFor="let dvd of dvds">
+    <mat-card-header>
+      <mat-card-title>{{dvd.title}}</mat-card-title>
+      <mat-card-subtitle>{{dvd.ISBN}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      {{dvd.duration}}
+    </mat-card-content>
+    <mat-card-content>
+      {{dvd.producer}}
+    </mat-card-content>
+    <mat-card-content>
+      {{dvd.sector}}
+    </mat-card-content>
+    <mat-card-content>
+      {{dvd.sector}}
+    </mat-card-content>
+    <mat-card-content>
+      {{dvd.publDate}}
+    </mat-card-content>
+    <mat-card-content>
+      {{dvd.borrowedDate}}
+    </mat-card-content>
+  </mat-card>
+
+  <!--DVDs-->
+  <mat-card *ngFor="let odBook of odBooks">
+    <mat-card-header>
+      <mat-card-title>{{odBook.title}}</mat-card-title>
+      <mat-card-subtitle>{{odBook.sector}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      {{odBook.borrowedDate}}
+    </mat-card-content>
+    <mat-card-content>
+      {{odBook.reader}}
+    </mat-card-content>
+    <mat-card-content>
+      {{odBook.authors}}
+    </mat-card-content>
+    <mat-card-content>
+      {{odBook.publisher}}
+    </mat-card-content>
+    <mat-card-content>
+      {{odBook.pageCount}}
+    </mat-card-content>
+  </mat-card>
+
+  <!--DVDs-->
+  <mat-card *ngFor="let odDVD of odDVDs">
+    <mat-card-header>
+      <mat-card-title>{{odDVD.title}}</mat-card-title>
+      <mat-card-subtitle>{{odDVD.ISBN}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      {{odDVD.duration}}
+    </mat-card-content>
+    <mat-card-content>
+      {{odDVD.producer}}
+    </mat-card-content>
+    <mat-card-content>
+      {{odDVD.sector}}
+    </mat-card-content>
+    <mat-card-content>
+      {{odDVD.sector}}
+    </mat-card-content>
+    <mat-card-content>
+      {{odDVD.publDate}}
+    </mat-card-content>
+    <mat-card-content>
+      {{odDVD.borrowedDate}}
+    </mat-card-content>
+  </mat-card>
+
+  <!--DVDs-->
+  <mat-card *ngFor="let reader of readers">
+    <mat-card-header>
+      <mat-card-title>{{reader.ID}}</mat-card-title>
+      <mat-card-subtitle>{{reader.name}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      {{reader.address}}
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,0 +1,15 @@
+<div class="text-center align-middle">
+  <form (ngSubmit)="onSubmit()" class="form-signin" #signin="ngForm">
+    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+    <label for="inputEmail" class="sr-only">Email address</label>
+    <input type="email" [(ngModel)]="email" id="inputEmail" name="email" class="form-control" placeholder="Email address" required autofocus>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" [(ngModel)]="password" id="inputPassword" name="pwd" class="form-control" placeholder="Password" required>
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit" [disabled]="!signin.form.valid">Sign in</button>
+  </form>
+</div>

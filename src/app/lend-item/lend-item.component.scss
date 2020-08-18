@@ -1,0 +1,8 @@
+.lendForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.lendForm > * {
+    width: 40%; 
+}

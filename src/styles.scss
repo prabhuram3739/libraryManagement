@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+// @import '~bootstrap/dist/css/bootstrap.min.css';
+@import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
+
+body {
+    // height: 100vh;
+    // background: #e8eccf;    
+    margin: 0;
+    box-sizing: content-box;
+}
+
+.actionForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.actionForm> * {
+    width: 40%;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,50 @@
+<div class="viewAll">
+  <h2>Overdrafted Books</h2>
+    <mat-card *ngFor="let book of books">
+      <mat-card-header>
+        <mat-card-title>{{book.title}}</mat-card-title>
+        <mat-card-subtitle>{{book.sector}}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        {{book.publDate}}
+      </mat-card-content>
+      <mat-card-content>
+        {{book.burrowedDate}}
+      </mat-card-content>
+      <mat-card-content>
+        {{book.reader}}
+      </mat-card-content>
+      <mat-card-content>
+        {{book.authors.name}}
+      </mat-card-content>
+      <mat-card-content>
+        {{book.publisher}}
+      </mat-card-content>
+      <mat-card-content>
+        {{book.pageCount}}
+      </mat-card-content>
+    </mat-card>
+
+    <h2>Overdrafted DVDs</h2>
+    <mat-card *ngFor="let dvd of dvds">
+      <mat-card-header>
+        <mat-card-title>{{dvd.title}}</mat-card-title>
+        <mat-card-subtitle>{{dvd.sector}}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        {{dvd.publDate}}
+      </mat-card-content>
+      <mat-card-content>
+        {{dvd.burrowedDate}}
+      </mat-card-content>
+      <mat-card-content>
+        {{dvd.reader}}
+      </mat-card-content>
+      <mat-card-content>
+        {{dvd.actors[0].name}}
+      </mat-card-content>
+      <mat-card-content>
+        {{dvd.producer}}
+      </mat-card-content>
+    </mat-card>
+  </div>

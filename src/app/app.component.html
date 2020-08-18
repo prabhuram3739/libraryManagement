@@ -1,0 +1,62 @@
+<mat-sidenav-container class="app-container">
+
+    <mat-sidenav #sidenav mode="over" class="sidenav" color="primary">
+
+        <mat-toolbar class="sidenavToolbar">
+            <mat-toolbar-row [routerLink]="['']" (click)="sidenav.toggle()">
+                <span>Home</span>
+                <span class="app-toolbar-filler"></span>
+                <mat-icon class="example-icon">home</mat-icon>
+            </mat-toolbar-row>
+
+            <mat-toolbar-row [routerLink]="['lend-item']" (click)="sidenav.toggle()">
+                <span>Lend Item</span>
+                <span class="app-toolbar-filler"></span>
+                <mat-icon class="example-icon">account_circle</mat-icon>
+            </mat-toolbar-row>
+
+            <mat-toolbar-row [routerLink]="['return-item']" (click)="sidenav.toggle()">
+                <span>Return Item</span>
+                <span class="app-toolbar-filler"></span>
+                <mat-icon class="example-icon">account_circle</mat-icon>
+            </mat-toolbar-row>
+
+            <mat-toolbar-row [routerLink]="['add-item']" (click)="sidenav.toggle()">
+                <span>Add Item</span>
+                <span class="app-toolbar-filler"></span>
+                <mat-icon class="example-icon">account_circle</mat-icon>
+            </mat-toolbar-row>
+
+            <mat-toolbar-row [routerLink]="['delete-item']" (click)="sidenav.toggle()">
+                <span>Delete Item</span>
+                <span class="app-toolbar-filler"></span>
+                <mat-icon class="example-icon">account_circle</mat-icon>
+            </mat-toolbar-row>
+
+            <mat-toolbar-row [routerLink]="['view-all']" (click)="sidenav.toggle()">
+                <span>View All Items</span>
+                <span class="app-toolbar-filler"></span>
+                <mat-icon class="example-icon">account_circle</mat-icon>
+            </mat-toolbar-row>
+
+            <mat-toolbar-row [routerLink]="['report']" (click)="sidenav.toggle()">
+                <span>Generate Report</span>
+                <span class="app-toolbar-filler"></span>
+                <mat-icon class="example-icon">account_circle</mat-icon>
+            </mat-toolbar-row>
+
+        </mat-toolbar>
+    </mat-sidenav>
+
+    <mat-toolbar color="primary">
+        <button mat-button class="app-menu-button" (click)="sidenav.toggle()">
+            <i class="material-icons">menu</i>
+        </button>
+        <span class="title">{{title}}</span>
+    </mat-toolbar>
+
+    <div class="app-content">
+        <router-outlet></router-outlet>
+    </div>
+
+</mat-sidenav-container>
