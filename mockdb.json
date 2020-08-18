@@ -65,6 +65,17 @@
       "authors": "testAuthor1",
       "publisher": "testPublisher1",
       "pageCount": "3000"
+    },
+    {
+      "id": 7,
+      "title": "testBook-10",
+      "sector": "Novels",
+      "borrowedDate": "",
+      "reader": "",
+      "ISBN": "1233133",
+      "authors": "testAuthor2",
+      "publisher": "testPublisher1",
+      "pageCount": "400"
     }
   ],
   "overDraftedBooks": [
