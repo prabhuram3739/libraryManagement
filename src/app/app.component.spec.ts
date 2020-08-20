@@ -1,25 +1,11 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { AddItemComponent } from './add-item/add-item.component';
-import { LendItemComponent } from './lend-item/lend-item.component';
-import { LoginComponent } from './login/login.component';
-import { MaterialModuleModule } from './material-module/material-module.module';
-import { ReportComponent } from './report/report.component';
-import { ViewAllComponent } from './view-all/view-all.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent,
-        HomeComponent,
-        AddItemComponent,
-        LendItemComponent,
-        LoginComponent,
-        MaterialModuleModule,
-        ReportComponent,
-        ViewAllComponent
+        AppComponent
       ],
     }).compileComponents();
   }));

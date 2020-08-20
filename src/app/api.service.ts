@@ -34,30 +34,20 @@ export class ApiService {
   /* Post the Book for adding */
   public postBook(book) {
     console.log(book);
+    /*return this.httpPost
+    .post( API_URL+'/books', book)
+    .pipe(map(response=> {
+      console.log(response);
+      const books = response;
+      if(books) {
+        return books[book];
+      }
+
+    }))
+    .pipe(catchError(this.handleError));    */
+
     return new Promise((resolve, reject) => {
       this.http.post(API_URL+'/books', book).subscribe(res => {
-      resolve(res);
-      }, (err) => {
-      reject(err);
-      });
-      });
-  }
-
-  /* Post the DVD for adding */
-  public postDvd(dvd) {
-    console.log(dvd);
-    return new Promise((resolve, reject) => {
-      this.http.post(API_URL+'/DVDS', dvd).subscribe(res => {
-      resolve(res);
-      }, (err) => {
-      reject(err);
-      });
-      });
-  }
-
-  public postIsbn(isbnData) {
-    return new Promise((resolve, reject) => {
-      this.http.post(API_URL+'/isbn', isbnData).subscribe(res => {
       resolve(res);
       }, (err) => {
       reject(err);
@@ -112,25 +102,6 @@ export class ApiService {
       
     }))
     .pipe(catchError(this.handleError));    
-  }
-
-  //Delete the record
-  public deleteItem(isbn: any) {
-    console.log(isbn);
-    const httpOptions: any = {
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    };
-    
-    httpOptions.body = {
-      id: 8
-      // ...
-    };
-    return 
-      /*this.http.request('delete', API_URL+'/books', httpOptions.body.id).subscribe(res => {
-        console.log(res);
-      });*/
   }
 
   private handleError(error: Response | any){
