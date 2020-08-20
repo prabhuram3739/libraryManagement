@@ -87,6 +87,50 @@
       "authors": "testAuthor5",
       "publisher": "testPublisher4",
       "pageCount": "200"
+    },
+    {
+      "id": 9,
+      "title": "testBook-12",
+      "sector": "Thriller",
+      "borrowedDate": "",
+      "reader": "",
+      "ISBN": "1233137",
+      "authors": "testAuthor3",
+      "publisher": "testPublisher5",
+      "pageCount": "56"
+    },
+    {
+      "id": 10,
+      "title": "testBook-13",
+      "sector": "Thriller",
+      "borrowedDate": "",
+      "reader": "",
+      "ISBN": "1233138",
+      "authors": "testAuthor8",
+      "publisher": "testPublisher9",
+      "pageCount": "22"
+    },
+    {
+      "id": 11,
+      "title": "testBook-13",
+      "sector": "Thriller",
+      "borrowedDate": "",
+      "reader": "",
+      "ISBN": "1233139",
+      "authors": "testAuthor10",
+      "publisher": "testPublisher91",
+      "pageCount": "22"
+    },
+    {
+      "id": 12,
+      "title": "testBook-12",
+      "sector": "Thriller",
+      "borrowedDate": "",
+      "reader": "",
+      "ISBN": "1233131111",
+      "authors": "testAuthor1234",
+      "publisher": "testPublisher43",
+      "pageCount": "200"
     }
   ],
   "overDraftedBooks": [
@@ -118,7 +162,6 @@
       "id": 1,
       "title": "DVD1",
       "sector": "Sci-Fi",
-      "publDate": "10/10/1995",
       "borrowedDate": "",
       "reader": "",
       "ISBN": "1a98e63984",
@@ -147,7 +190,6 @@
       "id": 2,
       "title": "DVD2",
       "sector": "Sci-Fi",
-      "publDate": "10/10/1995",
       "borrowedDate": "",
       "reader": "",
       "ISBN": "1a98e63984",
@@ -176,7 +218,6 @@
       "id": 3,
       "title": "DVD3",
       "sector": "Action",
-      "publDate": "10/10/1995",
       "borrowedDate": "08/11/2018",
       "reader": "RDR15",
       "ISBN": "1a98e63984",
@@ -200,6 +241,84 @@
         "english",
         "arabic"
       ]
+    },
+    {
+      "id": 4,
+      "title": "testDVDTitle",
+      "sector": "Novels",
+      "borrowedDate": "",
+      "reader": "",
+      "ISBN": "111111",
+      "authors": "rajini",
+      "producer": "testabc",
+      "duration": "200",
+      "subtitles": "yes",
+      "languages": "english"
+    },
+    {
+      "id": 5,
+      "title": "testDVDTitle",
+      "sector": "Novels",
+      "borrowedDate": "",
+      "reader": "",
+      "ISBN": "111111",
+      "authors": "rajini",
+      "producer": "testabc",
+      "duration": "200",
+      "subtitles": "yes",
+      "languages": "english,tamil"
+    },
+    {
+      "id": 6,
+      "title": "testDVDTitle1",
+      "sector": "Novels",
+      "borrowedDate": "",
+      "reader": "",
+      "ISBN": "1111111",
+      "authors": "vijay",
+      "producer": "testabcd",
+      "duration": "2009",
+      "subtitles": "yes",
+      "languages": "english"
+    },
+    {
+      "id": 7,
+      "title": "testDVDTitle1",
+      "sector": "Novels",
+      "borrowedDate": "",
+      "reader": "",
+      "ISBN": "1111111",
+      "authors": "vijay",
+      "producer": "testabcd",
+      "duration": "2009",
+      "subtitles": "yes",
+      "languages": "english"
+    },
+    {
+      "id": 8,
+      "title": "testDVDTitle2",
+      "sector": "Novels",
+      "borrowedDate": "",
+      "reader": "",
+      "ISBN": "1111111",
+      "authors": "rajini",
+      "producer": "testabcde",
+      "duration": "200",
+      "subtitles": "yes",
+      "languages": "english"
+    },
+    {
+      "id": 9,
+      "title": "testDVDTitle23",
+      "sector": "Novels",
+      "borrowedDate": "",
+      "reader": "",
+      "ISBN": "111111111",
+      "authors": "rajini",
+      "producer": "testabcdef",
+      "duration": "200",
+      "subtitles": "yes",
+      "languages": "english"
     }
   ],
   "odDVDS": [
@@ -207,7 +326,6 @@
       "id": 1,
       "title": "OverDDVD5",
       "sector": "Action",
-      "publDate": "10/10/1995",
       "borrowedDate": "08/11/2018",
       "reader": "RDR15",
       "ISBN": "1a98e63984",
@@ -236,7 +354,6 @@
       "id": 2,
       "title": "OverDDVD7",
       "sector": "Action",
-      "publDate": "10/10/1995",
       "borrowedDate": "08/11/2018",
       "reader": "RDR17",
       "ISBN": "1a98e63984",
@@ -292,6 +409,23 @@
       "name": "asda",
       "ID": "RDR19",
       "address": "asas as"
+    }
+  ],
+  "isbn": [
+    {
+      "id": 1,
+      "isbn": "1233139",
+      "reader": "RDR18"
+    },
+    {
+      "isbn": "1233134",
+      "reader": "RDR19",
+      "id": 2
+    },
+    {
+      "isbn": "242444",
+      "reader": "RDR20",
+      "id": 3
     }
   ]
 }

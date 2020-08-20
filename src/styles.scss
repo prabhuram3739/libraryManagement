@@ -19,3 +19,7 @@ body {
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-tab-body.mat-tab-body-active {
+    min-height: 650px !important;
+}
