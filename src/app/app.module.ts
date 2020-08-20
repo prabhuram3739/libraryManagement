@@ -12,20 +12,21 @@ import { AppComponent } from './app.component';
 import { AddItemComponent } from './add-item/add-item.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+
 import { ViewAllComponent } from './view-all/view-all.component';
 import { LendItemComponent } from './lend-item/lend-item.component';
 import { ReportComponent } from './report/report.component';
 import { LayoutModule } from '@angular/cdk/layout';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { MatFormFieldModule } from '@angular/material';
-import { MatInputModule } from '@angular/material';
-import { MatButtonModule } from '@angular/material';
-import { MatToolbarModule } from '@angular/material';
-import { MatTooltipModule } from '@angular/material';
-import { MatMenuModule } from '@angular/material';
-import { MatIconModule } from '@angular/material';
-import { MatCardModule } from '@angular/material';
-import { MatSidenavModule } from '@angular/material';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
