@@ -1,7 +1,7 @@
 <div>
   <mat-tab-group class="addItemForm">
     <mat-tab label="Add Book">
-      <form class="actionForm">
+      <form id="bookForm" #bookForm class="actionForm">
         <mat-form-field>
           <input name="bookTitle" matInput id="bookTitle" #bookTitle placeholder="Enter Book Title">
         </mat-form-field>
@@ -13,8 +13,8 @@
         <mat-form-field>
           <mat-select name="sector" id="sector" #sector placeholder="Select Sector">
             <mat-option [value]="'Novels'">Novels</mat-option>
-            <mat-option [value]="'Novels'">Novels</mat-option>
-            <mat-option [value]="'Novels'">Novels</mat-option>
+            <mat-option [value]="'SciFi'">SciFi</mat-option>
+            <mat-option [value]="'Thriller'">Thriller</mat-option>
           </mat-select>
         </mat-form-field>
 
@@ -31,59 +31,55 @@
         </mat-form-field>
 
         <button mat-icon-button style="width:40px">
-          <button mat-fab color="primary" (click)="postData(bookTitle, bookIsbn, sector, author, publisher, pageCount);">Add <i class="material-icons">add</i></button>
+          <button mat-fab color="primary" (click)="postBookData(bookTitle, bookIsbn, sector, author, publisher, pageCount);">Add <i class="material-icons">add</i></button>
         </button>
       </form>
     </mat-tab>
 
     <mat-tab label="Add DVD">
-        <form class="actionForm">
+        <form  id="dvdForm" #dvdForm class="actionForm">
           <mat-form-field>
-            <input matInput id="dvdTitle" placeholder="Enter DVD Title">
+            <input matInput name="dvdTitle" id="dvdTitle" #dvdTitle placeholder="Enter DVD Title">
           </mat-form-field>
   
           <mat-form-field>
-            <input matInput id="dvdIsbn" placeholder="Enter ISBN">
+            <input matInput name="dvdIsbn" id="dvdIsbn" #dvdIsbn placeholder="Enter ISBN">
           </mat-form-field>
   
           <mat-form-field>
-            <mat-select placeholder="Select Sector">
-              <mat-option [value]="'Novels'">Novels</mat-option>
-              <mat-option [value]="'Novels'">Novels</mat-option>
-              <mat-option [value]="'Novels'">Novels</mat-option>
+            <mat-select placeholder="Select Sector" name="dvdSector" id="dvdSector" #dvdSector>
+              <mat-option [value]="'Thriller'">Thriller</mat-option>
+              <mat-option [value]="'SciFi'">SciFi</mat-option>
+              <mat-option [value]="'Animation'">Animation</mat-option>
             </mat-select>
           </mat-form-field>
   
           <mat-form-field>
-            <input matInput [matDatepicker]="dvdPublDate" placeholder="Published date">
-            <mat-datepicker-toggle matSuffix [for]="dvdPublDate"></mat-datepicker-toggle>
-            <mat-datepicker #dvdPublDate></mat-datepicker>
-          </mat-form-field>
-  
-          <mat-form-field>
-            <input matInput placeholder="Enter Producer">
+            <input matInput name="producer" id="producer" #producer placeholder="Enter Producer">
           </mat-form-field>
 
           <mat-form-field>
-            <input matInput placeholder="Available Languages">
+            <input matInput name="language" id="language" #language placeholder="Available Languages">
           </mat-form-field>
 
           <mat-form-field>
-            <input matInput placeholder="Available Subtitles">
+            <input matInput name="subtitles" id="subtitles" #subtitles placeholder="Available Subtitles">
           </mat-form-field>
 
           <mat-form-field>
-            <input matInput placeholder="Enter Actors">
+            <input matInput name="actors" id="actors" #actors placeholder="Enter Actors">
           </mat-form-field>
 
           <mat-form-field>
-            <input matInput placeholder="Enter Duration">
+            <input matInput name="duration" id="duration" #duration placeholder="Enter Duration">
           </mat-form-field>
 
           <button mat-icon-button style="width:40px">
-            <button mat-fab color="primary" >Add <i class="material-icons">add</i></button>
+            <button mat-fab color="primary"  (click)="postDvdData(dvdTitle, dvdIsbn, dvdSector, producer, language, subtitles, actors, duration);">Add <i class="material-icons">add</i></button>
           </button>
         </form>
       </mat-tab>
   </mat-tab-group>
 </div>
+
+<div class="responseMsg">{{responseMsg}}</div>

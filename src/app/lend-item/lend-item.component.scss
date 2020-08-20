@@ -4,5 +4,10 @@
 }
 
 .lendForm > * {
-    width: 40%; 
+    width: 100%; 
+}
+
+.responseMsg {
+    display: flex;
+    justify-content: center;
 }

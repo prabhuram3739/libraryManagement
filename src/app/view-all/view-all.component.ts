@@ -3,7 +3,7 @@ import { ApiService } from '../api.service'
 import { Book } from '../model/book';
 import { DVD } from '../model/dvd';
 import { Reader } from '../model/reader';
-import {Observable} from 'rxjs'
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-view-all',
